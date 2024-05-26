@@ -1,63 +1,76 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-</head>
-
-<style>
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
-</style>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Enchanted Realms</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
+    <header class="text-center">
         <h1>The Enchanted Realms</h1>
         <p>A World of Magic, Dragons, and Godlings</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#hieroglyphs">Hieroglyphs</a></li>
-            <li><a href="#dreams">Dream Magic</a></li>
-            <li><a href="#dragons">Dragons</a></li>
-            <li><a href="#godlings">Godlings</a></li>
-            <li><a href="#hierarchy">Power Hierarchy</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">The Enchanted Realms</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hieroglyphs">Hieroglyphs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dreams">Dream Magic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dragons">Dragons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#godlings">Godlings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hierarchy">Power Hierarchy</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <main>
-        <section id="hieroglyphs">
+    <main class="container">
+        <section id="hieroglyphs" class="my-5">
             <h2>Hieroglyphs</h2>
-            <p>The hieroglyphs magic system...</p>
-            <!-- Add more details from the PDF here -->
+            <p>The hieroglyphs magic system is a complex and well-defined system inspired by various fantasy sources. This system includes different types of hieroglyphs, mediums for inscribing, and roles such as scribes, mages, sorcerers, and wizards.</p>
+            <img src="images/hieroglyphs-example.png" alt="Hieroglyphs Example" class="img-fluid">
+            <a href="hieroglyphs.html">Learn more about Hieroglyphs</a>
         </section>
-        <section id="dreams">
+        <section id="dreams" class="my-5">
             <h2>Dream Magic</h2>
-            <p>The dream magic system...</p>
-            <!-- Add more details from the PDF here -->
+            <p>The dream magic system is unique and mystical...</p>
+            <a href="dreams.html">Learn more about Dream Magic</a>
         </section>
-        <section id="dragons">
+        <section id="dragons" class="my-5">
             <h2>Dragons</h2>
             <p>Information about dragons...</p>
-            <!-- Add more details from the PDF here -->
+            <a href="dragons.html">Learn more about Dragons</a>
         </section>
-        <section id="godlings">
+        <section id="godlings" class="my-5">
             <h2>Godlings</h2>
             <p>Information about godlings...</p>
-            <!-- Add more details from the PDF here -->
+            <a href="godlings.html">Learn more about Godlings</a>
         </section>
-        <section id="hierarchy">
+        <section id="hierarchy" class="my-5">
             <h2>Power Hierarchy</h2>
             <p>Details about the power hierarchy...</p>
-            <!-- Add more details from the PDF here -->
         </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Ariel Shalem. All rights reserved.</p>
+        <a href="assets/your-pdf.pdf" target="_blank" class="text-white">Download the PDF</a>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
