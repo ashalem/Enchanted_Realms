@@ -11,14 +11,14 @@ body {
 }
 
 /* Header styles */
-header {
+.header-image {
     background-image: url('images/header-image.png');
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 100px 0;
+    padding: 60px 0; /* Adjusted padding to match other pages */
     text-align: center;
-    margin-bottom: 60px; /* Increase space below header */
+    margin-bottom: 40px; /* Add space below header */
 }
 
 header h1 {
@@ -58,7 +58,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     height: 300px;
-    margin-bottom: 40px; /* Increase margin between sections */
+    margin-bottom: 20px;
     transition: transform 0.3s ease, filter 0.3s ease; /* Add transition for zoom-out effect */
 }
 
