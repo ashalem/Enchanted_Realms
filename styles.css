@@ -52,24 +52,43 @@ nav ul li a:hover {
 }
 
 /* Section styles */
-main {
-    padding: 20px;
-}
-
-section {
+.image-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
     margin-bottom: 20px;
 }
 
-section:nth-of-type(even) {
-    background-color: #f9f9f9;
+.image-section a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
 }
 
-section img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
+.image-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.image-section:hover .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.image-section h2 {
+    font-size: 2em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Footer styles */
@@ -103,5 +122,13 @@ footer a:hover {
 
     footer {
         position: relative;
+    }
+
+    .image-section {
+        height: 200px;
+    }
+
+    .image-section h2 {
+        font-size: 1.5em;
     }
 }
