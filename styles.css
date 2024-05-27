@@ -16,9 +16,9 @@ body {
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 60px 0; /* Adjusted padding to match other pages */
+    padding: 100px 0; /* Consistent padding */
     text-align: center;
-    margin-bottom: 40px; /* Add space below header */
+    margin-bottom: 40px; /* Consistent margin */
 }
 
 header h1 {
@@ -59,7 +59,7 @@ nav ul li a:hover {
     background-position: center;
     height: 300px;
     margin-bottom: 20px;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Add transition for zoom-out effect */
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .image-section a {
@@ -80,12 +80,12 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s ease, color 0.3s ease; /* Add transition for text effect */
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .image-section:hover {
-    transform: scale(0.9); /* Increase zoom-out effect */
-    filter: brightness(0.5); /* Increase darken effect */
+    transform: scale(0.9);
+    filter: brightness(0.5);
 }
 
 .image-section:hover .overlay {
@@ -93,8 +93,8 @@ nav ul li a:hover {
 }
 
 .image-section:hover h2 {
-    color: #ffcc00; /* Make the text more pronounced on hover */
-    font-size: 2.2em; /* Increase font size on hover */
+    color: #ffcc00;
+    font-size: 2.2em;
 }
 
 .image-section h2 {
@@ -145,6 +145,6 @@ footer a:hover {
     }
 
     .image-section:hover h2 {
-        font-size: 1.7em; /* Adjust font size increase for mobile */
+        font-size: 1.7em;
     }
 }
