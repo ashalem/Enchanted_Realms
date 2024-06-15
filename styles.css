@@ -1,18 +1,20 @@
 /* styles.css */
 
 /* Base styles */
-body, .container, .tabcontent, .tabcontent p, .tabcontent h2, .tabcontent h3, .tabcontent h4, .tabcontent h5, .tabcontent h6, .tabcontent ul, .tabcontent ol, .tabcontent li, .tabcontent a, .tabcontent img, .tabcontent table, .tabcontent th, .tabcontent td, .tabcontent tr, .tabcontent blockquote, .tabcontent pre, .tabcontent code, .tabcontent hr, .tabcontent .image-section, .tabcontent .homepage-image-section, .tabcontent .god-dragon-image-section, .tabcontent .overlay, .tabcontent .header-image, .tabcontent .footer, .tabcontent .footer a, .tabcontent .footer a:hover, .tabcontent .header-image h1, .tabcontent .image-section h2, .tabcontent .image-section:hover h2, .tabcontent nav, .tabcontent nav ul, .tabcontent nav ul li, .tabcontent nav ul li a, .tabcontent nav ul li a:hover, .tabcontent footer, .tabcontent footer a, .tabcontent footer a:hover, .tabcontent .col-sm-6, .tabcontent .col-md-4{
-    font-family: 'Roboto', sans-serif;
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --background-color: #1a1a1a;
+    --text-color: #f4f4f4;
+}
+
+body, .container, .tabcontent, .tabcontent p, .tabcontent h2, .tabcontent h3, .tabcontent h4, .tabcontent h5, .tabcontent h6, .tabcontent ul, .tabcontent ol, .tabcontent li, .tabcontent a, .tabcontent img, .tabcontent table, .tabcontent th, .tabcontent td, .tabcontent tr, .tabcontent blockquote, .tabcontent pre, .tabcontent code, .tabcontent hr, .tabcontent .image-section, .tabcontent .homepage-image-section, .tabcontent .god-dragon-image-section, .tabcontent .overlay, .tabcontent .header-image, .tabcontent .footer, .tabcontent .footer a, .tabcontent .footer a:hover, .tabcontent .header-image h1, .tabcontent .image-section h2, .tabcontent .image-section:hover h2, .tabcontent nav, .tabcontent nav ul, .tabcontent nav ul li, .tabcontent nav ul li a, .tabcontent nav ul li a:hover, .tabcontent footer, .tabcontent footer a, .tabcontent footer a:hover, .tabcontent .col-sm-6, .tabcontent .col-md-4 {
+    font-family: var(--font-family);
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #333; /* Dark background */
-    color: #f4f4f4; /* Light text */
-    min-height: 100vh; /* Ensure the body takes full height */
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
 }
 
 /* Header styles */
