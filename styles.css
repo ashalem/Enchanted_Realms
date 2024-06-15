@@ -56,18 +56,14 @@ nav ul li a:hover {
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
-    height: 0;
-    padding-bottom: 75%; /* 4:3 aspect ratio */
 }
 
 .image-section img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio */
+    height: auto;
+    display: block;
     transition: transform 0.3s ease, filter 0.3s ease;
+    object-fit: cover;
 }
 
 .image-section a {
@@ -110,6 +106,25 @@ nav ul li a:hover {
     font-size: 2.2em;
 }
 
+/* Specific styles for homepage images */
+.homepage-image-section {
+    height: 200px; /* Adjust height for homepage images */
+    padding: 0;
+}
+
+.homepage-image-section img {
+    object-fit: cover;
+}
+
+/* Specific styles for god-dragon images on dragons page */
+.god-dragon-image-section {
+    height: auto; /* Allow height to adjust based on image aspect ratio */
+}
+
+.god-dragon-image-section img {
+    object-fit: contain; /* Maintain aspect ratio and contain within the button */
+}
+
 /* Footer styles */
 footer {
     background-color: #333;
@@ -128,7 +143,21 @@ footer a:hover {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (min-width: 1920px) {
+    .image-section {
+        width: 100%; /* Use full width */
+        height: auto; /* Adjust height automatically */
+        max-height: 1080px; /* Maximum height for Full HD */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-section img {
+        max-width: 100%; /* Ensure the image is not wider than the container */
+        max-height: 100%; /* Ensure the image is not taller than the container */
+        aspect-ratio: 4 / 3; /* Maintain 4:3 aspect ratio */
+    }
     nav ul li {
         display: block;
         margin: 0;
@@ -141,11 +170,6 @@ footer a:hover {
 
     footer {
         position: relative;
-    }
-
-    .image-section {
-        height: auto;
-        padding-bottom: 75%; /* Maintain 4:3 aspect ratio */
     }
 
     .image-section h2 {
@@ -166,3 +190,4 @@ footer a:hover {
         max-width: 100%;
     }
 }
+
