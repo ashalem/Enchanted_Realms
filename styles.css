@@ -21,7 +21,7 @@ body, .container, .tabcontent, .tabcontent p, .tabcontent h2, .tabcontent h3, .t
 .header-image {
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: #bc2929;
     padding: 100px 0;
     text-align: center;
     margin-bottom: 40px;
@@ -48,7 +48,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #22c29a;
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s ease;
@@ -131,7 +131,7 @@ nav ul li a:hover {
 /* Footer styles */
 footer {
     background-color: #333;
-    color: #fff;
+    color: #9e0404;
     text-align: center;
     padding: 10px 0;
 }
