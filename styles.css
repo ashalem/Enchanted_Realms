@@ -12,13 +12,12 @@ body {
 
 /* Header styles */
 .header-image {
-    background-image: url('images/header-image.png');
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 100px 0; /* Consistent padding */
+    padding: 100px 0;
     text-align: center;
-    margin-bottom: 40px; /* Consistent margin */
+    margin-bottom: 40px;
 }
 
 header h1 {
