@@ -6,9 +6,13 @@ body, .container, .tabcontent, .tabcontent p, .tabcontent h2, .tabcontent h3, .t
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a; /* Dark background */
+    background-color: #333; /* Dark background */
     color: #f4f4f4; /* Light text */
     min-height: 100vh; /* Ensure the body takes full height */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Header styles */
