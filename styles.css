@@ -85,7 +85,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0); /* No dimming by default */
+    background: rgba(0, 0, 0, 0.3); /* Slight dimming effect */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +93,7 @@ nav ul li a:hover {
 }
 
 .image-section:hover .overlay {
-    background: rgba(0, 0, 0, 0.3); /* Dimming effect on hover */
+    background: rgba(0, 0, 0, 0.5); /* Increase dimming on hover */
 }
 
 .image-section h2 {
@@ -184,11 +184,6 @@ footer a:hover {
 }
 
 /* Dark theme */
-body {
-    background-color: #000000; /* Dark background */
-    color: #ffffff; /* White text */
-}
-
 nav ul li a {
     color: #ffcc00; /* Gold text */
 }
