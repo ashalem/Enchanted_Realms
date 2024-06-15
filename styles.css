@@ -182,3 +182,45 @@ footer a:hover {
         max-width: 100%;
     }
 }
+
+/* Dark theme */
+body {
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+nav ul li a {
+    color: #ffcc00; /* Gold text */
+}
+
+nav ul li a:hover {
+    background-color: #333333; /* Dark hover background */
+}
+
+.image-section .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dimming effect on hover */
+}
+
+.image-section h2 {
+    color: #ffcc00;
+}
+
+.image-section:hover h2 {
+    font-size: 2.2em;
+    color: #ffcc00;
+}
+
+footer {
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+footer a {
+    color: #ffcc00;
+}
+
+@media (min-width: 1920px) {
+    .image-section {
+        background-color: #000000; /* Dark background */
+    }
+}
