@@ -3,108 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragons - The Enchanted Realms</title>
+    <title>The Enchanted Realms</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
-    <header class="header-image text-center">
-        <h1>Dragons</h1>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">The Enchanted Realms</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="hieroglyphs.html">Hieroglyphs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="dragons.html">Dragons</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="assets/your-pdf.pdf">Download the PDF</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <main class="container">
-        <section class="my-5">
-            <h2>God-Dragons</h2>
-            <p>The god-dragons are the most powerful beings in the Enchanted Realms, each representing a fundamental aspect of the world.</p>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="god-dragon-image-section image-section">
-                        <a href="arion.html">
-                            <img src="images/arion.png" alt="Arion">
-                            <div class="overlay">
-                                <h2>Arion</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="god-dragon-image-section image-section">
-                        <a href="eldric.html">
-                            <img src="images/eldric.png" alt="Eldric">
-                            <div class="overlay">
-                                <h2>Eldric</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="god-dragon-image-section image-section">
-                        <a href="aurora.html">
-                            <img src="images/aurora.png" alt="Aurora">
-                            <div class="overlay">
-                                <h2>Aurora</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="god-dragon-image-section image-section">
-                        <a href="elysia.html">
-                            <img src="images/elysia.png" alt="Elysia">
-                            <div class="overlay">
-                                <h2>Elysia</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="god-dragon-image-section image-section">
-                        <a href="finnegan.html">
-                            <img src="images/finnegan.png" alt="Finnegan">
-                            <div class="overlay">
-                                <h2>Finnegan</h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="god-dragon-image-section image-section">
-                        <a href="gaia.html">
-                            <img src="images/gaia.png" alt="Gaia">
-                            <div class="overlay">
-                                <h2>Gaia</h2>
-                            </div>
-                        </a>
-                    </div>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo2e.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="dragons.html">GOD-DRAGONS</a></li>
+                    <li><a href="hieroglyphs.html">HIEROGLYPHS</a></li>
+                    <li><a href="dreams.html">FEY</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="heading"> God-Dragons</h1>
+    </section>
+
+    <section class="about-god-dragons">
+        <h1>What are God-Dragons?</h1>
+        <p>The God-Dragons are primordial and immensely powerful beings who shaped the Enchanted Realms. Each has two forms, humanoid and dragon, and embodies specific elements and principles through intricate hieroglyphs that govern the world's magic. These God-Dragons bestow magical hieroglyphs and essential knowledge upon ancient human civilization, shaping its development. Together, they created a world where magic and knowledge coexist, guiding and protecting the inhabitants of the Enchanted Realms.</p>
+        <p>The six God-Dragons are Arion, Aurora, Eldric, Elysia, Finnegan, and Gaia.</p>
+    </section>
+    </section> 
+    <section class="god-dragons">
+        <h1>Meet the God-Dragons</h1>
+        <div class="row">
+            <div class="god-dragon-col">
+                <img src="images/arion.png">
+                <div class="layer">
+                    <h3>Arion</h3>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Ariel Shalem. All rights reserved.</p>
-        <a href="assets/your-pdf.pdf" target="_blank" class="text-white">Download the PDF</a>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <div class="god-dragon-col">
+                <img src="images/aurora.png">
+                <div class="layer">
+                    <h3>Aurora</h3>
+                 </div>   
+            </div>
+            <div class="god-dragon-col">
+                <img src="images/eldric.png">
+                <div class="layer">
+                    <h3>Eldric</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="god-dragon-col">
+                <img src="images/elysia.png">
+                <div class="layer">
+                    <h3>Elysia</h3>
+                </div>
+            </div>
+            <div class="god-dragon-col">
+                <img src="images/finnegan.png">
+                <div class="layer">
+                    <h3>Finnegan</h3>
+                </div>
+            </div>
+            <div class="god-dragon-col">
+                <img src="images/gaia.png">
+                <div class="layer">
+                    <h3>Gaia</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="before-footer">
+    </section>
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>My mission is to provide an Enchanted touch to your life</p>
+        <p>Made by Ariel Shalem</p>
+    </section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
 </body>
 </html>

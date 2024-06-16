@@ -1,195 +1,234 @@
 /* styles.css */
 
-/* Base styles */
-:root {
-    --font-family: 'Roboto', sans-serif;
-    --background-color: #1a1a1a;
-    --text-color: #f4f4f4;
-}
-
-body, .container, .tabcontent, .tabcontent p, .tabcontent h2, .tabcontent h3, .tabcontent h4, .tabcontent h5, .tabcontent h6, .tabcontent ul, .tabcontent ol, .tabcontent li, .tabcontent a, .tabcontent img, .tabcontent table, .tabcontent th, .tabcontent td, .tabcontent tr, .tabcontent blockquote, .tabcontent pre, .tabcontent code, .tabcontent hr, .tabcontent .image-section, .tabcontent .homepage-image-section, .tabcontent .god-dragon-image-section, .tabcontent .overlay, .tabcontent .header-image, .tabcontent .footer, .tabcontent .footer a, .tabcontent .footer a:hover, .tabcontent .header-image h1, .tabcontent .image-section h2, .tabcontent .image-section:hover h2, .tabcontent nav, .tabcontent nav ul, .tabcontent nav ul li, .tabcontent nav ul li a, .tabcontent nav ul li a:hover, .tabcontent footer, .tabcontent footer a, .tabcontent footer a:hover, .tabcontent .col-sm-6, .tabcontent .col-md-4 {
-    font-family: var(--font-family);
-    line-height: 1.6;
+*{
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    background: #0d0d0d;
+}
+.header{
     min-height: 100vh;
-}
-
-/* Header styles */
-.header-image {
-    background-size: cover;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/header-image.png');
     background-position: center;
-    color: #1a1a1a;
-    padding: 0px 0;
-    text-align: center;
-    margin-bottom: 0;
+    background-size: cover;
+    position: relative;
+}
+.normal-header{
+    width: 100%;
+    color: black;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0;
+.nav-links{
+    flex: 1;
+    text-align: right;
 }
-
-/* Navbar styles */
-nav {
-    margin-bottom: 0px;
-}
-
-nav ul {
+.nav-links ul li{
     list-style: none;
-    padding: 0;
+    display: inline-block;
+    padding: 6px 10px;
+    position: relative;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 0px;
-}
-
-nav ul li a {
-    color: #1a1a1a;
+.nav-links ul li a{
     text-decoration: none;
-    padding: 0px;
-    transition: background-color 0.3s ease;
+    color: #fff;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #18b58e;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
 
-nav ul li a:hover {
-    background-color: #ffcc00;
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #18b58e;
+    background: #18b58e;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
 }
 
-/* Section styles */
-.image-section {
+@media (max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #18b58e;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: #18b58e;
+    color: #fff;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+
+.sub-header{
+  height: 50vh;
+  width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('images/god-dragons-header.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.about-god-dragons{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.about-god-dragons h1{
+    color: white;
+    font-size: 20px;
+}
+.about-god-dragons p{
+    font-size: 15px;
+margin: auto;
+    color: rgb(158, 158, 158);
+}
+
+
+.god-dragons{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.god-dragons h1{
+    color: white;
+    font-size: 20px;
+}
+.god-dragon-col{
+    flex-basis: 32%;
     position: relative;
     overflow: hidden;
-    margin-bottom: 20px;
-    background-color: #1a1a1a; /* Dark background for sections */
+}
+.god-dragon-col img{
+    width: 100%;
+    transition: filter 0.5s;
+    border-radius: 10px;
+
 }
 
-.image-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease, filter 0.3s ease;
+.god-dragon-col:hover img{
+    filter: brightness(50%);
+    transition: 0.5s;
 }
 
-.image-section a {
-    display: block;
-    width: 100%;
+.layer{
+    background: transparent;
     height: 100%;
-    color: #fff;
-    text-decoration: none;
-}
-
-.image-section .overlay {
-    position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
+    position: absolute;
+    transition: .5s;
+}
+.layer h3{
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1); /* Less dimming effect */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
 }
-
-.image-section:hover .overlay {
-    background: rgba(0, 0, 0, 0.3); /* Increase dimming slightly on hover */
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
 }
-
-.image-section h2 {
-    font-size: 2em;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.image-section:hover h2 {
-    color: #ffcc00;
-    font-size: 2.2em;
-}
-
-/* Specific styles for homepage images */
-.homepage-image-section {
-    height: 200px; /* Adjust height for homepage images */
-    padding: 0;
-}
-
-.homepage-image-section img {
-    object-fit: cover;
-}
-
-/* Specific styles for god-dragon images on dragons page */
-.god-dragon-image-section {
-    height: auto; /* Allow height to adjust based on image aspect ratio */
-}
-
-.god-dragon-image-section img {
-    object-fit: contain; /* Maintain aspect ratio and contain within the button */
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #1a1a1a;
-    text-align: center;
-    padding: 0px 0;
-}
-
-footer a {
-    color: #ffcc00;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive design */
-@media (min-width: 1920px) {
-    .image-section {
-        width: 100%; /* Use full width */
-        height: auto; /* Adjust height automatically */
-        max-height: 1080px; /* Maximum height for Full HD */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .image-section img {
-        max-width: 100%; /* Ensure the image is not wider than the container */
-        max-height: 100%; /* Ensure the image is not taller than the container */
-        aspect-ratio: 4 / 3; /* Maintain 4:3 aspect ratio */
-    }
-    nav ul li {
-        display: block;
-        margin: 0;
-    }
-    
-    nav ul li a {
-        display: block;
-        padding: 0px;
-    }
-
-    footer {
-        position: relative;
-    }
-
-    .image-section h2 {
-        font-size: 1.5em;
-    }
-
-    .image-section:hover h2 {
-        font-size: 1.7em;
-    }
-
-    .col-sm-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+.before-footer {
+    padding-top: 50px;
 }
